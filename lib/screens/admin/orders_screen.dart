@@ -38,9 +38,8 @@ class OrdersScreen extends StatelessWidget {
                   final orderDocs = ordersSnapshot.data?.docs ?? [];
 
                   if (orderDocs.isEmpty) {
-                    return _buildNoOrdersWidget(); // Show the No Orders widget in place of the list
+                    return SizedBox.shrink(); // No orders for this user
                   }
-
 
                   return Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
@@ -133,25 +132,4 @@ class OrdersScreen extends StatelessWidget {
       ),
     );
   }
-}
-
-Widget _buildNoOrdersWidget() {
-  return Center(
-    child: Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Icon(Icons.shopping_cart_outlined, size: 80, color: Colors.grey),
-        const SizedBox(height: 10),
-        const Text(
-          "No Orders Yet",
-          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.grey),
-        ),
-        const SizedBox(height: 5),
-        const Text(
-          "Your orders will appear here",
-          style: TextStyle(fontSize: 14, color: Colors.grey),
-        ),
-      ],
-    ),
-  );
 }
