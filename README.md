@@ -17,7 +17,7 @@ steps for installing and running app:
    email:acartify@gmail.com
    password:Admin@123
 
-In this portal, you can add new products with min one variant, along with img url link in google drive by allowing everyone permission in it (img_picker is used but firebase requires paid version for storage of img in database).
+In this portal, you can add new products with min one variant,after adding variant add variant button has to be pressed, along with img url link in google drive by allowing everyone permission in it (img_picker is used but firebase requires paid version for storage of img in database).
 Also, you can view the orders by different users and profile page in this portal.
 
 2. User Portal
