@@ -42,7 +42,7 @@ class _AddProductScreenState extends State<AddProductScreen> {
                 // Image Path
                 TextFormField(
                   controller: _imgpathController,
-                  decoration: const InputDecoration(labelText: 'Image Path'),
+                  decoration: const InputDecoration(labelText: 'Image Url'),
                   validator: (value) {
                     if (value == null || value.isEmpty) return 'Please enter image path';
                     return null;
